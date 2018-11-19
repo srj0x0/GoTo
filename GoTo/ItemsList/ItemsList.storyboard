@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="System colors introduced in macOS 10.14" minToolsVersion="10.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Items List View Controller-->
+        <scene sceneID="N20-x4-Nxm">
+            <objects>
+                <viewController storyboardIdentifier="GTOItemsListViewController" id="9CZ-AT-LYK" customClass="GTOItemsListViewController" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="vV6-VQ-Add">
+                        <rect key="frame" x="0.0" y="0.0" width="260" height="180"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="3SH-K3-WMH" customClass="GTODraggingDestinationView">
+                                <rect key="frame" x="0.0" y="0.0" width="260" height="180"/>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="Uch-es-bcV" customClass="GTOColoredView">
+                                <rect key="frame" x="0.0" y="160" width="260" height="62"/>
+                                <subviews>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="ASv-L1-c8Y" customClass="GTOColoredView">
+                                        <rect key="frame" x="50" y="8" width="160" height="4"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                                <color key="value" name="separatorColor" catalog="System" colorSpace="catalog"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </customView>
+                                    <searchField wantsLayer="YES" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pa0-Uj-bE1">
+                                        <rect key="frame" x="10" y="20" width="240" height="22"/>
+                                        <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" borderStyle="bezel" alignment="left" usesSingleLineMode="YES" bezelStyle="round" id="4A1-sd-zuc">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </searchFieldCell>
+                                    </searchField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ASv-L1-c8Y" firstAttribute="top" secondItem="pa0-Uj-bE1" secondAttribute="bottom" constant="8" id="5pN-ri-uyu"/>
+                                    <constraint firstAttribute="bottom" secondItem="pa0-Uj-bE1" secondAttribute="bottom" constant="20" id="AzF-TA-cGx"/>
+                                    <constraint firstItem="ASv-L1-c8Y" firstAttribute="leading" secondItem="Uch-es-bcV" secondAttribute="leading" constant="50" id="Lxr-BQ-ort"/>
+                                    <constraint firstAttribute="bottom" secondItem="ASv-L1-c8Y" secondAttribute="bottom" constant="8" id="RpG-kp-PFZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="pa0-Uj-bE1" secondAttribute="trailing" constant="10" id="ZLY-co-6Uj"/>
+                                    <constraint firstItem="pa0-Uj-bE1" firstAttribute="top" secondItem="Uch-es-bcV" secondAttribute="top" constant="20" id="bci-NK-zgv"/>
+                                    <constraint firstAttribute="trailing" secondItem="ASv-L1-c8Y" secondAttribute="trailing" constant="50" id="w3Y-3d-1tO"/>
+                                    <constraint firstItem="pa0-Uj-bE1" firstAttribute="leading" secondItem="Uch-es-bcV" secondAttribute="leading" constant="10" id="xAd-sY-HvC"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" name="windowBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </customView>
+                            <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Is-VA-rEh">
+                                <rect key="frame" x="0.0" y="0.0" width="260" height="160"/>
+                                <clipView key="contentView" drawsBackground="NO" id="U6v-Tm-IkC">
+                                    <rect key="frame" x="0.0" y="0.0" width="260" height="160"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" typeSelect="NO" rowSizeStyle="automatic" viewBased="YES" floatsGroupRows="NO" id="18j-iK-Sxv">
+                                            <rect key="frame" x="0.0" y="0.0" width="260" height="160"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <size key="intercellSpacing" width="3" height="2"/>
+                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                            <tableColumns>
+                                                <tableColumn editable="NO" width="257" minWidth="40" maxWidth="1000" id="gxF-qw-3Zm">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
+                                                        <font key="font" metaFont="smallSystem"/>
+                                                        <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                    </tableHeaderCell>
+                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" title="Text Cell" id="dky-zO-Sne">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                    <tableColumnResizingMask key="resizingMask" resizeWithTable="YES"/>
+                                                </tableColumn>
+                                            </tableColumns>
+                                        </tableView>
+                                    </subviews>
+                                    <nil key="backgroundColor"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="tad-gw-Z73">
+                                    <rect key="frame" x="0.0" y="144" width="260" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="FTu-cm-yvE">
+                                    <rect key="frame" x="224" y="17" width="15" height="102"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uB7-JN-YEi" customClass="GTOHintView">
+                                <rect key="frame" x="0.0" y="0.0" width="260" height="160"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="drawDashLine" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </customView>
+                            <customView hidden="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cx9-Ul-jJT" customClass="GTOHintView">
+                                <rect key="frame" x="0.0" y="0.0" width="260" height="180"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="stringValue" value="Drop item here"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dashLineColor">
+                                        <color key="value" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="drawDashLine" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="3Is-VA-rEh" firstAttribute="top" secondItem="Uch-es-bcV" secondAttribute="bottom" id="4nf-fq-Tfa"/>
+                            <constraint firstItem="uB7-JN-YEi" firstAttribute="centerY" secondItem="3Is-VA-rEh" secondAttribute="centerY" id="805-p9-gDa"/>
+                            <constraint firstItem="Cx9-Ul-jJT" firstAttribute="top" secondItem="vV6-VQ-Add" secondAttribute="top" id="8ay-VO-jAa"/>
+                            <constraint firstItem="uB7-JN-YEi" firstAttribute="centerX" secondItem="3Is-VA-rEh" secondAttribute="centerX" id="9qd-sO-z0v"/>
+                            <constraint firstAttribute="trailing" secondItem="3Is-VA-rEh" secondAttribute="trailing" id="AD4-nI-bNa"/>
+                            <constraint firstItem="uB7-JN-YEi" firstAttribute="height" secondItem="3Is-VA-rEh" secondAttribute="height" id="DDY-Ag-uVP"/>
+                            <constraint firstAttribute="trailing" secondItem="Uch-es-bcV" secondAttribute="trailing" id="GYQ-yy-AdG"/>
+                            <constraint firstItem="Uch-es-bcV" firstAttribute="leading" secondItem="vV6-VQ-Add" secondAttribute="leading" id="HFE-eH-PQo"/>
+                            <constraint firstAttribute="bottom" secondItem="Cx9-Ul-jJT" secondAttribute="bottom" id="HFs-h6-VXT"/>
+                            <constraint firstItem="3SH-K3-WMH" firstAttribute="top" secondItem="vV6-VQ-Add" secondAttribute="top" id="Q6A-15-XHc"/>
+                            <constraint firstAttribute="trailing" secondItem="Cx9-Ul-jJT" secondAttribute="trailing" id="Tcg-ha-Lov"/>
+                            <constraint firstItem="Uch-es-bcV" firstAttribute="top" secondItem="vV6-VQ-Add" secondAttribute="top" constant="-42" id="VPJ-Pg-kB4"/>
+                            <constraint firstItem="uB7-JN-YEi" firstAttribute="width" secondItem="3Is-VA-rEh" secondAttribute="width" id="bfQ-TF-TX5"/>
+                            <constraint firstAttribute="trailing" secondItem="3SH-K3-WMH" secondAttribute="trailing" id="gs6-UB-IqJ"/>
+                            <constraint firstAttribute="bottom" secondItem="3Is-VA-rEh" secondAttribute="bottom" id="hfZ-SA-4vb"/>
+                            <constraint firstItem="3Is-VA-rEh" firstAttribute="leading" secondItem="vV6-VQ-Add" secondAttribute="leading" id="rDb-sT-Cem"/>
+                            <constraint firstItem="Cx9-Ul-jJT" firstAttribute="leading" secondItem="vV6-VQ-Add" secondAttribute="leading" id="uIF-IO-tur"/>
+                            <constraint firstAttribute="bottom" secondItem="3SH-K3-WMH" secondAttribute="bottom" id="ykZ-aC-MmY"/>
+                            <constraint firstItem="3SH-K3-WMH" firstAttribute="leading" secondItem="vV6-VQ-Add" secondAttribute="leading" id="zwN-Ih-NHL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="draggingDestinationView" destination="3SH-K3-WMH" id="1y4-UR-Muv"/>
+                        <outlet property="dropHintView" destination="Cx9-Ul-jJT" id="YMa-jV-Cao"/>
+                        <outlet property="emptyStateView" destination="uB7-JN-YEi" id="uSr-E5-HPe"/>
+                        <outlet property="searchBarContainerTopConstraint" destination="VPJ-Pg-kB4" id="xfJ-yr-cEg"/>
+                        <outlet property="searchBarContainerView" destination="Uch-es-bcV" id="2qW-bV-wtu"/>
+                        <outlet property="searchField" destination="pa0-Uj-bE1" id="Cp6-je-zc6"/>
+                        <outlet property="tableView" destination="18j-iK-Sxv" id="bkd-be-vQV"/>
+                    </connections>
+                </viewController>
+                <customObject id="Hno-mn-pP9" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-45" y="53"/>
+        </scene>
+    </scenes>
+</document>

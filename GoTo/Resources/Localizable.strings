@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  GoTo
+
+  Created by Sergey Dokukin on 11/5/18.
+  Copyright © 2018 Sergey Dokukin. All rights reserved.
+*/
+
+"itemsList.menu.showWindow" = "Show panel";
+"itemsList.menu.hideWindow" = "Hide panel";
+"itemsList.menu.showSearchBar" = "Show search bar";
+"itemsList.menu.hideSearchBar" = "Hide search bar";
+"itemsList.menu.quit" = "Quit";
+
+"itemsList.controller.searchPlaceholder" = "Type to search";
+"itemsList.controller.emptySearchingResult" = "Nothing found";
+"itemsList.controller.dropHintText" = "Drop something here";

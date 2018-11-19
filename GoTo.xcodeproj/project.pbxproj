@@ -1,0 +1,841 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A54FB5592187A31F009627C2 /* NSWorkspace+GTOItemIconLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = A54FB5582187A31F009627C2 /* NSWorkspace+GTOItemIconLoader.m */; };
+		A56302782190C35500B93514 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A56302772190C35500B93514 /* Localizable.strings */; };
+		A563027F2190C59300B93514 /* GTOManagedItem+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A563027D2190C59300B93514 /* GTOManagedItem+CoreDataClass.m */; };
+		A56302802190C59300B93514 /* GTOManagedItem+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A563027E2190C59300B93514 /* GTOManagedItem+CoreDataProperties.m */; };
+		A59554C22185CD28009A0854 /* GTOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A59554C12185CD28009A0854 /* GTOAppDelegate.m */; };
+		A59554C82185CD28009A0854 /* GoTo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A59554C62185CD28009A0854 /* GoTo.xcdatamodeld */; };
+		A59554CA2185CD29009A0854 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A59554C92185CD29009A0854 /* Assets.xcassets */; };
+		A59554CD2185CD29009A0854 /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A59554CB2185CD29009A0854 /* MainMenu.storyboard */; };
+		A59554D02185CD29009A0854 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A59554CF2185CD29009A0854 /* main.m */; };
+		A59554DB2185CD29009A0854 /* GoToTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A59554DA2185CD29009A0854 /* GoToTests.m */; };
+		A59554EA2185CE10009A0854 /* GTOCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = A59554E92185CE10009A0854 /* GTOCoreDataStack.m */; };
+		A5A7EEAD219197400013499D /* GTOItemsRequestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A7EEAC219197400013499D /* GTOItemsRequestBuilder.m */; };
+		A5B705212185DA0E00870393 /* GTOItemsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B705202185DA0E00870393 /* GTOItemsListViewController.m */; };
+		A5B705262185DA8900870393 /* GTOItemsListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B705252185DA8900870393 /* GTOItemsListModel.m */; };
+		A5B705292185DAD300870393 /* GTOListTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B705282185DAD300870393 /* GTOListTableCellView.m */; };
+		A5B7052B2185DAE700870393 /* GTOListTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B7052A2185DAE700870393 /* GTOListTableCellView.xib */; };
+		A5B7053D2185E4EA00870393 /* GTODraggingDestinationView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B7053C2185E4EA00870393 /* GTODraggingDestinationView.m */; };
+		A5BB4D1B2194244500AFB95F /* GTOColoredView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB4D1A2194244500AFB95F /* GTOColoredView.m */; };
+		A5BB4D2621942B1700AFB95F /* GTOHintView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BB4D2521942B1700AFB95F /* GTOHintView.m */; };
+		A5BB4D2821942B5A00AFB95F /* GTOHintView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5BB4D2721942B5A00AFB95F /* GTOHintView.xib */; };
+		A5BE3A9B21923528008085E2 /* ItemsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5BE3A9A21923528008085E2 /* ItemsList.storyboard */; };
+		A5DECE1A219B197000E910F9 /* GTOItemsFacade.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DECE19219B197000E910F9 /* GTOItemsFacade.m */; };
+		A5F368392188E33B005A75D1 /* GTODroppedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F368382188E33B005A75D1 /* GTODroppedItem.m */; };
+		A5F3683D2188E5E5005A75D1 /* GTODroppedItemsReader.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F3683C2188E5E5005A75D1 /* GTODroppedItemsReader.m */; };
+		A5F368432188F7FB005A75D1 /* GTOItemsListCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F368422188F7FB005A75D1 /* GTOItemsListCoordinator.m */; };
+		A5FBD3D3219F0C5600E74714 /* GTOGlobalHotkeyMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FBD3D2219F0C5600E74714 /* GTOGlobalHotkeyMonitor.m */; };
+		A5FBD3D7219F1B7300E74714 /* GTOLocalHotkeyMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FBD3D6219F1B7300E74714 /* GTOLocalHotkeyMonitor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A59554D72185CD29009A0854 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A59554B52185CD28009A0854 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A59554BC2185CD28009A0854;
+			remoteInfo = GoTo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A5243DC421999620001F8137 /* GTONibReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTONibReusableView.h; sourceTree = "<group>"; };
+		A54FB5572187A31F009627C2 /* NSWorkspace+GTOItemIconLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSWorkspace+GTOItemIconLoader.h"; sourceTree = "<group>"; };
+		A54FB5582187A31F009627C2 /* NSWorkspace+GTOItemIconLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSWorkspace+GTOItemIconLoader.m"; sourceTree = "<group>"; };
+		A563026A2190840E00B93514 /* GTOItemsListModelOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTOItemsListModelOutput.h; sourceTree = "<group>"; };
+		A563026B21908A2000B93514 /* GTOItemsListViewOutput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTOItemsListViewOutput.h; sourceTree = "<group>"; };
+		A56302772190C35500B93514 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		A563027B2190C59300B93514 /* GTOManagedItem+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GTOManagedItem+CoreDataProperties.h"; sourceTree = "<group>"; };
+		A563027C2190C59300B93514 /* GTOManagedItem+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GTOManagedItem+CoreDataClass.h"; sourceTree = "<group>"; };
+		A563027D2190C59300B93514 /* GTOManagedItem+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GTOManagedItem+CoreDataClass.m"; sourceTree = "<group>"; };
+		A563027E2190C59300B93514 /* GTOManagedItem+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GTOManagedItem+CoreDataProperties.m"; sourceTree = "<group>"; };
+		A571BEA82199B9580068D441 /* GTOItemProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTOItemProtocol.h; sourceTree = "<group>"; };
+		A59554BD2185CD28009A0854 /* GoTo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoTo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A59554C02185CD28009A0854 /* GTOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTOAppDelegate.h; sourceTree = "<group>"; };
+		A59554C12185CD28009A0854 /* GTOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTOAppDelegate.m; sourceTree = "<group>"; };
+		A59554C72185CD28009A0854 /* GoTo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoTo.xcdatamodel; sourceTree = "<group>"; };
+		A59554C92185CD29009A0854 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A59554CC2185CD29009A0854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainMenu.storyboard; sourceTree = "<group>"; };
+		A59554CE2185CD29009A0854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A59554CF2185CD29009A0854 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A59554D62185CD29009A0854 /* GoToTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoToTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A59554DA2185CD29009A0854 /* GoToTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoToTests.m; sourceTree = "<group>"; };
+		A59554DC2185CD29009A0854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A59554E82185CE10009A0854 /* GTOCoreDataStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTOCoreDataStack.h; sourceTree = "<group>"; };
+		A59554E92185CE10009A0854 /* GTOCoreDataStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTOCoreDataStack.m; sourceTree = "<group>"; };
+		A5A7EEAB219197400013499D /* GTOItemsRequestBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTOItemsRequestBuilder.h; sourceTree = "<group>"; };
+		A5A7EEAC219197400013499D /* GTOItemsRequestBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTOItemsRequestBuilder.m; sourceTree = "<group>"; };
+		A5B7051F2185DA0E00870393 /* GTOItemsListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTOItemsListViewController.h; sourceTree = "<group>"; };
+		A5B705202185DA0E00870393 /* GTOItemsListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTOItemsListViewController.m; sourceTree = "<group>"; };
+		A5B705242185DA8900870393 /* GTOItemsListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTOItemsListModel.h; sourceTree = "<group>"; };
+		A5B705252185DA8900870393 /* GTOItemsListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTOItemsListModel.m; sourceTree = "<group>"; };
+		A5B705272185DAD300870393 /* GTOListTableCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTOListTableCellView.h; sourceTree = "<group>"; };
+		A5B705282185DAD300870393 /* GTOListTableCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTOListTableCellView.m; sourceTree = "<group>"; };
+		A5B7052A2185DAE700870393 /* GTOListTableCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTOListTableCellView.xib; sourceTree = "<group>"; };
+		A5B705342185DEFD00870393 /* GTOItemIconLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTOItemIconLoader.h; sourceTree = "<group>"; };
+		A5B7053B2185E4EA00870393 /* GTODraggingDestinationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTODraggingDestinationView.h; sourceTree = "<group>"; };
+		A5B7053C2185E4EA00870393 /* GTODraggingDestinationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTODraggingDestinationView.m; sourceTree = "<group>"; };
+		A5BB4D192194244500AFB95F /* GTOColoredView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTOColoredView.h; sourceTree = "<group>"; };
+		A5BB4D1A2194244500AFB95F /* GTOColoredView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTOColoredView.m; sourceTree = "<group>"; };
+		A5BB4D2421942B1700AFB95F /* GTOHintView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTOHintView.h; sourceTree = "<group>"; };
+		A5BB4D2521942B1700AFB95F /* GTOHintView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTOHintView.m; sourceTree = "<group>"; };
+		A5BB4D2721942B5A00AFB95F /* GTOHintView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GTOHintView.xib; sourceTree = "<group>"; };
+		A5BE3A9A21923528008085E2 /* ItemsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ItemsList.storyboard; sourceTree = "<group>"; };
+		A5DECE18219B197000E910F9 /* GTOItemsFacade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTOItemsFacade.h; sourceTree = "<group>"; };
+		A5DECE19219B197000E910F9 /* GTOItemsFacade.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTOItemsFacade.m; sourceTree = "<group>"; };
+		A5F368372188E33B005A75D1 /* GTODroppedItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTODroppedItem.h; sourceTree = "<group>"; };
+		A5F368382188E33B005A75D1 /* GTODroppedItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTODroppedItem.m; sourceTree = "<group>"; };
+		A5F3683B2188E5E5005A75D1 /* GTODroppedItemsReader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTODroppedItemsReader.h; sourceTree = "<group>"; };
+		A5F3683C2188E5E5005A75D1 /* GTODroppedItemsReader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTODroppedItemsReader.m; sourceTree = "<group>"; };
+		A5F368412188F7FB005A75D1 /* GTOItemsListCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTOItemsListCoordinator.h; sourceTree = "<group>"; };
+		A5F368422188F7FB005A75D1 /* GTOItemsListCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTOItemsListCoordinator.m; sourceTree = "<group>"; };
+		A5FBD3D1219F0C5600E74714 /* GTOGlobalHotkeyMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTOGlobalHotkeyMonitor.h; sourceTree = "<group>"; };
+		A5FBD3D2219F0C5600E74714 /* GTOGlobalHotkeyMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTOGlobalHotkeyMonitor.m; sourceTree = "<group>"; };
+		A5FBD3D5219F1B7300E74714 /* GTOLocalHotkeyMonitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTOLocalHotkeyMonitor.h; sourceTree = "<group>"; };
+		A5FBD3D6219F1B7300E74714 /* GTOLocalHotkeyMonitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTOLocalHotkeyMonitor.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A59554BA2185CD28009A0854 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A59554D32185CD29009A0854 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5243DC321999620001F8137 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A5DECE11219B10D900E910F9 /* Views */,
+				A5DECE10219B10C000E910F9 /* Entities */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A54FB55A2187A51D009627C2 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A59554C02185CD28009A0854 /* GTOAppDelegate.h */,
+				A59554C12185CD28009A0854 /* GTOAppDelegate.m */,
+				A59554CB2185CD29009A0854 /* MainMenu.storyboard */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		A56302722190BF4E00B93514 /* DroppedItemsReader */ = {
+			isa = PBXGroup;
+			children = (
+				A5F3683B2188E5E5005A75D1 /* GTODroppedItemsReader.h */,
+				A5F3683C2188E5E5005A75D1 /* GTODroppedItemsReader.m */,
+			);
+			path = DroppedItemsReader;
+			sourceTree = "<group>";
+		};
+		A56302742190C03200B93514 /* ItemIconLoader */ = {
+			isa = PBXGroup;
+			children = (
+				A5B705342185DEFD00870393 /* GTOItemIconLoader.h */,
+				A54FB5572187A31F009627C2 /* NSWorkspace+GTOItemIconLoader.h */,
+				A54FB5582187A31F009627C2 /* NSWorkspace+GTOItemIconLoader.m */,
+			);
+			path = ItemIconLoader;
+			sourceTree = "<group>";
+		};
+		A56302752190C1B900B93514 /* DraggingDestinationView */ = {
+			isa = PBXGroup;
+			children = (
+				A5B7053B2185E4EA00870393 /* GTODraggingDestinationView.h */,
+				A5B7053C2185E4EA00870393 /* GTODraggingDestinationView.m */,
+			);
+			path = DraggingDestinationView;
+			sourceTree = "<group>";
+		};
+		A563027A2190C57500B93514 /* ManagedItem */ = {
+			isa = PBXGroup;
+			children = (
+				A563027C2190C59300B93514 /* GTOManagedItem+CoreDataClass.h */,
+				A563027D2190C59300B93514 /* GTOManagedItem+CoreDataClass.m */,
+				A563027B2190C59300B93514 /* GTOManagedItem+CoreDataProperties.h */,
+				A563027E2190C59300B93514 /* GTOManagedItem+CoreDataProperties.m */,
+			);
+			path = ManagedItem;
+			sourceTree = "<group>";
+		};
+		A59554B42185CD28009A0854 = {
+			isa = PBXGroup;
+			children = (
+				A59554BF2185CD28009A0854 /* GoTo */,
+				A59554D92185CD29009A0854 /* GoToTests */,
+				A59554BE2185CD28009A0854 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A59554BE2185CD28009A0854 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A59554BD2185CD28009A0854 /* GoTo.app */,
+				A59554D62185CD29009A0854 /* GoToTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A59554BF2185CD28009A0854 /* GoTo */ = {
+			isa = PBXGroup;
+			children = (
+				A54FB55A2187A51D009627C2 /* AppDelegate */,
+				A5B705302185DCCF00870393 /* Common */,
+				A59554E62185CD67009A0854 /* Entities */,
+				A5DECE0B219B0FE100E910F9 /* Helpers */,
+				A5A7EEB12191EF580013499D /* ItemsList */,
+				A59554EB2185CE26009A0854 /* Resources */,
+				A59554E52185CD5C009A0854 /* Services */,
+				A59554EC2185CE2E009A0854 /* SupportingFiles */,
+			);
+			path = GoTo;
+			sourceTree = "<group>";
+		};
+		A59554D92185CD29009A0854 /* GoToTests */ = {
+			isa = PBXGroup;
+			children = (
+				A59554DA2185CD29009A0854 /* GoToTests.m */,
+				A59554DC2185CD29009A0854 /* Info.plist */,
+			);
+			path = GoToTests;
+			sourceTree = "<group>";
+		};
+		A59554E52185CD5C009A0854 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A5DECE17219B196300E910F9 /* ItemsFacade */,
+				A5A7EEAA219197160013499D /* ItemsRequestBuilder */,
+				A59554E72185CDD9009A0854 /* CoreDataStack */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A59554E62185CD67009A0854 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A5F368362188E31F005A75D1 /* DroppedItem */,
+				A563027A2190C57500B93514 /* ManagedItem */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		A59554E72185CDD9009A0854 /* CoreDataStack */ = {
+			isa = PBXGroup;
+			children = (
+				A59554E82185CE10009A0854 /* GTOCoreDataStack.h */,
+				A59554E92185CE10009A0854 /* GTOCoreDataStack.m */,
+			);
+			path = CoreDataStack;
+			sourceTree = "<group>";
+		};
+		A59554EB2185CE26009A0854 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A59554C92185CD29009A0854 /* Assets.xcassets */,
+				A59554C62185CD28009A0854 /* GoTo.xcdatamodeld */,
+				A56302772190C35500B93514 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A59554EC2185CE2E009A0854 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A59554CE2185CD29009A0854 /* Info.plist */,
+				A59554CF2185CD29009A0854 /* main.m */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		A5A7EEAA219197160013499D /* ItemsRequestBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				A5A7EEAB219197400013499D /* GTOItemsRequestBuilder.h */,
+				A5A7EEAC219197400013499D /* GTOItemsRequestBuilder.m */,
+			);
+			path = ItemsRequestBuilder;
+			sourceTree = "<group>";
+		};
+		A5A7EEB12191EF580013499D /* ItemsList */ = {
+			isa = PBXGroup;
+			children = (
+				A5F368402188F7D5005A75D1 /* Coordinator */,
+				A5B7051C2185D9C600870393 /* ItemsListViewController */,
+				A5BE3A9A21923528008085E2 /* ItemsList.storyboard */,
+			);
+			path = ItemsList;
+			sourceTree = "<group>";
+		};
+		A5B7051C2185D9C600870393 /* ItemsListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A5B705232185DA6F00870393 /* Model */,
+				A5B705222185DA4200870393 /* ViewController */,
+			);
+			path = ItemsListViewController;
+			sourceTree = "<group>";
+		};
+		A5B7051E2185D9DB00870393 /* ListTableCellView */ = {
+			isa = PBXGroup;
+			children = (
+				A5B705272185DAD300870393 /* GTOListTableCellView.h */,
+				A5B705282185DAD300870393 /* GTOListTableCellView.m */,
+				A5B7052A2185DAE700870393 /* GTOListTableCellView.xib */,
+			);
+			path = ListTableCellView;
+			sourceTree = "<group>";
+		};
+		A5B705222185DA4200870393 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A5B7051F2185DA0E00870393 /* GTOItemsListViewController.h */,
+				A5B705202185DA0E00870393 /* GTOItemsListViewController.m */,
+				A563026B21908A2000B93514 /* GTOItemsListViewOutput.h */,
+				A5B7051E2185D9DB00870393 /* ListTableCellView */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A5B705232185DA6F00870393 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A5B705242185DA8900870393 /* GTOItemsListModel.h */,
+				A5B705252185DA8900870393 /* GTOItemsListModel.m */,
+				A563026A2190840E00B93514 /* GTOItemsListModelOutput.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A5B705302185DCCF00870393 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A5243DC321999620001F8137 /* Protocols */,
+				A5B705372185E4B300870393 /* Controls */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A5B705372185E4B300870393 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				A5BB4D182194242B00AFB95F /* ColoredView */,
+				A56302752190C1B900B93514 /* DraggingDestinationView */,
+				A5BB4D2321942ADD00AFB95F /* HintView */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		A5BB4D182194242B00AFB95F /* ColoredView */ = {
+			isa = PBXGroup;
+			children = (
+				A5BB4D192194244500AFB95F /* GTOColoredView.h */,
+				A5BB4D1A2194244500AFB95F /* GTOColoredView.m */,
+			);
+			path = ColoredView;
+			sourceTree = "<group>";
+		};
+		A5BB4D2321942ADD00AFB95F /* HintView */ = {
+			isa = PBXGroup;
+			children = (
+				A5BB4D2421942B1700AFB95F /* GTOHintView.h */,
+				A5BB4D2521942B1700AFB95F /* GTOHintView.m */,
+				A5BB4D2721942B5A00AFB95F /* GTOHintView.xib */,
+			);
+			path = HintView;
+			sourceTree = "<group>";
+		};
+		A5DECE0B219B0FE100E910F9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A56302722190BF4E00B93514 /* DroppedItemsReader */,
+				A5FBD3CE219F0C1700E74714 /* HotkeyMonitor */,
+				A56302742190C03200B93514 /* ItemIconLoader */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A5DECE10219B10C000E910F9 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A571BEA82199B9580068D441 /* GTOItemProtocol.h */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		A5DECE11219B10D900E910F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A5243DC421999620001F8137 /* GTONibReusableView.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A5DECE17219B196300E910F9 /* ItemsFacade */ = {
+			isa = PBXGroup;
+			children = (
+				A5DECE18219B197000E910F9 /* GTOItemsFacade.h */,
+				A5DECE19219B197000E910F9 /* GTOItemsFacade.m */,
+			);
+			path = ItemsFacade;
+			sourceTree = "<group>";
+		};
+		A5F368362188E31F005A75D1 /* DroppedItem */ = {
+			isa = PBXGroup;
+			children = (
+				A5F368372188E33B005A75D1 /* GTODroppedItem.h */,
+				A5F368382188E33B005A75D1 /* GTODroppedItem.m */,
+			);
+			path = DroppedItem;
+			sourceTree = "<group>";
+		};
+		A5F368402188F7D5005A75D1 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A5F368412188F7FB005A75D1 /* GTOItemsListCoordinator.h */,
+				A5F368422188F7FB005A75D1 /* GTOItemsListCoordinator.m */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A5FBD3CE219F0C1700E74714 /* HotkeyMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				A5FBD3CF219F0C2100E74714 /* GlobalHotkeyMonitor */,
+				A5FBD3D0219F0C2E00E74714 /* LocalHotkeyMonitor */,
+			);
+			path = HotkeyMonitor;
+			sourceTree = "<group>";
+		};
+		A5FBD3CF219F0C2100E74714 /* GlobalHotkeyMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				A5FBD3D1219F0C5600E74714 /* GTOGlobalHotkeyMonitor.h */,
+				A5FBD3D2219F0C5600E74714 /* GTOGlobalHotkeyMonitor.m */,
+			);
+			path = GlobalHotkeyMonitor;
+			sourceTree = "<group>";
+		};
+		A5FBD3D0219F0C2E00E74714 /* LocalHotkeyMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				A5FBD3D5219F1B7300E74714 /* GTOLocalHotkeyMonitor.h */,
+				A5FBD3D6219F1B7300E74714 /* GTOLocalHotkeyMonitor.m */,
+			);
+			path = LocalHotkeyMonitor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A59554BC2185CD28009A0854 /* GoTo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A59554DF2185CD29009A0854 /* Build configuration list for PBXNativeTarget "GoTo" */;
+			buildPhases = (
+				A59554B92185CD28009A0854 /* Sources */,
+				A59554BA2185CD28009A0854 /* Frameworks */,
+				A59554BB2185CD28009A0854 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoTo;
+			productName = GoTo;
+			productReference = A59554BD2185CD28009A0854 /* GoTo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A59554D52185CD29009A0854 /* GoToTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A59554E22185CD29009A0854 /* Build configuration list for PBXNativeTarget "GoToTests" */;
+			buildPhases = (
+				A59554D22185CD29009A0854 /* Sources */,
+				A59554D32185CD29009A0854 /* Frameworks */,
+				A59554D42185CD29009A0854 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A59554D82185CD29009A0854 /* PBXTargetDependency */,
+			);
+			name = GoToTests;
+			productName = GoToTests;
+			productReference = A59554D62185CD29009A0854 /* GoToTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A59554B52185CD28009A0854 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Sergey Dokukin";
+				TargetAttributes = {
+					A59554BC2185CD28009A0854 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					A59554D52185CD29009A0854 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = A59554BC2185CD28009A0854;
+					};
+				};
+			};
+			buildConfigurationList = A59554B82185CD28009A0854 /* Build configuration list for PBXProject "GoTo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A59554B42185CD28009A0854;
+			productRefGroup = A59554BE2185CD28009A0854 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A59554BC2185CD28009A0854 /* GoTo */,
+				A59554D52185CD29009A0854 /* GoToTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A59554BB2185CD28009A0854 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5BE3A9B21923528008085E2 /* ItemsList.storyboard in Resources */,
+				A5B7052B2185DAE700870393 /* GTOListTableCellView.xib in Resources */,
+				A56302782190C35500B93514 /* Localizable.strings in Resources */,
+				A59554CA2185CD29009A0854 /* Assets.xcassets in Resources */,
+				A59554CD2185CD29009A0854 /* MainMenu.storyboard in Resources */,
+				A5BB4D2821942B5A00AFB95F /* GTOHintView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A59554D42185CD29009A0854 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A59554B92185CD28009A0854 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59554EA2185CE10009A0854 /* GTOCoreDataStack.m in Sources */,
+				A5FBD3D3219F0C5600E74714 /* GTOGlobalHotkeyMonitor.m in Sources */,
+				A59554C82185CD28009A0854 /* GoTo.xcdatamodeld in Sources */,
+				A5BB4D2621942B1700AFB95F /* GTOHintView.m in Sources */,
+				A5F3683D2188E5E5005A75D1 /* GTODroppedItemsReader.m in Sources */,
+				A5BB4D1B2194244500AFB95F /* GTOColoredView.m in Sources */,
+				A59554D02185CD29009A0854 /* main.m in Sources */,
+				A5F368392188E33B005A75D1 /* GTODroppedItem.m in Sources */,
+				A563027F2190C59300B93514 /* GTOManagedItem+CoreDataClass.m in Sources */,
+				A5DECE1A219B197000E910F9 /* GTOItemsFacade.m in Sources */,
+				A59554C22185CD28009A0854 /* GTOAppDelegate.m in Sources */,
+				A54FB5592187A31F009627C2 /* NSWorkspace+GTOItemIconLoader.m in Sources */,
+				A5B7053D2185E4EA00870393 /* GTODraggingDestinationView.m in Sources */,
+				A5A7EEAD219197400013499D /* GTOItemsRequestBuilder.m in Sources */,
+				A5B705292185DAD300870393 /* GTOListTableCellView.m in Sources */,
+				A56302802190C59300B93514 /* GTOManagedItem+CoreDataProperties.m in Sources */,
+				A5F368432188F7FB005A75D1 /* GTOItemsListCoordinator.m in Sources */,
+				A5B705262185DA8900870393 /* GTOItemsListModel.m in Sources */,
+				A5B705212185DA0E00870393 /* GTOItemsListViewController.m in Sources */,
+				A5FBD3D7219F1B7300E74714 /* GTOLocalHotkeyMonitor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A59554D22185CD29009A0854 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59554DB2185CD29009A0854 /* GoToTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A59554D82185CD29009A0854 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A59554BC2185CD28009A0854 /* GoTo */;
+			targetProxy = A59554D72185CD29009A0854 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A59554CB2185CD29009A0854 /* MainMenu.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A59554CC2185CD29009A0854 /* Base */,
+			);
+			name = MainMenu.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A59554DD2185CD29009A0854 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A59554DE2185CD29009A0854 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A59554E02185CD29009A0854 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/GoTo/SupportingFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sdokukin.GoTo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		A59554E12185CD29009A0854 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/GoTo/SupportingFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sdokukin.GoTo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+		A59554E32185CD29009A0854 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GoToTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sdokukin.GoToTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoTo.app/Contents/MacOS/GoTo";
+			};
+			name = Debug;
+		};
+		A59554E42185CD29009A0854 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = GoToTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sdokukin.GoToTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoTo.app/Contents/MacOS/GoTo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A59554B82185CD28009A0854 /* Build configuration list for PBXProject "GoTo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A59554DD2185CD29009A0854 /* Debug */,
+				A59554DE2185CD29009A0854 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A59554DF2185CD29009A0854 /* Build configuration list for PBXNativeTarget "GoTo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A59554E02185CD29009A0854 /* Debug */,
+				A59554E12185CD29009A0854 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A59554E22185CD29009A0854 /* Build configuration list for PBXNativeTarget "GoToTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A59554E32185CD29009A0854 /* Debug */,
+				A59554E42185CD29009A0854 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A59554C62185CD28009A0854 /* GoTo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A59554C72185CD28009A0854 /* GoTo.xcdatamodel */,
+			);
+			currentVersion = A59554C72185CD28009A0854 /* GoTo.xcdatamodel */;
+			path = GoTo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A59554B52185CD28009A0854 /* Project object */;
+}

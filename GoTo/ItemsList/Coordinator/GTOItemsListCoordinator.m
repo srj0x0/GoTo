@@ -110,7 +110,7 @@ static NSString * const kGTOQuitKeyEquivalent = @"q";
 }
 
 - (GTOGlobalHotkeyMonitor *)instantiateItemsListVisibilityMonitor {
-    GTOGlobalHotkeyMonitor *monitor = [GTOGlobalHotkeyMonitor monitorWithCarbonKey:kVK_ANSI_G modifiers:cmdKey + shiftKey];
+    GTOGlobalHotkeyMonitor *monitor = [GTOGlobalHotkeyMonitor monitorWithCarbonKey:kVK_ANSI_G modifiers:optionKey + shiftKey];
     __weak typeof(self) weakSelf = self;
     [monitor beginKeyboardListening:^{
         [weakSelf toggleWindowVisibility];
@@ -129,6 +129,7 @@ static NSString * const kGTOQuitKeyEquivalent = @"q";
     windowVisibilityMenuItem.target = self;
     windowVisibilityMenuItem.action = @selector(toggleWindowVisibility);
     windowVisibilityMenuItem.keyEquivalent = kGTOItemsListShowKeyEquivalent;
+    windowVisibilityMenuItem.keyEquivalentModifierMask = NSEventModifierFlagOption;
     
     [statusItemMenu addItem:windowVisibilityMenuItem];
     

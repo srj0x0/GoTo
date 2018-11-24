@@ -7,7 +7,7 @@ This application allows you to save and quickly open any URL.
 
 # Usage
 
-Use drag'n'drop to insert, reorder or remove URL's. To open items list use ⌘ + ⇧ + G hotkey. 
+Use drag'n'drop to insert, reorder or remove URL's. To open items list use ⌥ + ⇧ + G hotkey. 
 You also can enable search bar by using ⌘ + F combination.
 This app support macOS Mojave light and dark themes "out of box".
 
